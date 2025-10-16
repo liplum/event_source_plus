@@ -1,7 +1,5 @@
+import 'entity/pack.dart';
 
-
-class EventSource {
-
-
-
+abstract class EventSource {
+  Stream<EventPack> on(String event);
 }
