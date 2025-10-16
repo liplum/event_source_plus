@@ -1,14 +1,18 @@
 name: event_source_plus
 description: A starting point for Dart libraries or applications.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/liplum/event_source_plus
 
 environment:
   sdk: ^3.9.2
 
-# Add regular dependencies here.
 dependencies:
-  # path: ^1.9.0
+  dio_sse:
+    git:
+      url: https://github.com/liplum/dio_sse.git
+      tag_pattern: 'v{{version}}'
+    version: ^2.0.0
+  web: ^1.1.1
 
 dev_dependencies:
   lints: ^6.0.0
